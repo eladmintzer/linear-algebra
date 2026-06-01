@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+**/.ipynb_checkpoints/
+*.pyc
+# gensim downloaded models live in ~/gensim-data by default; ignore any local copy
+gensim-data/
