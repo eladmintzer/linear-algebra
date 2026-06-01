@@ -50,7 +50,10 @@ wait for approval → next part.
   overwrite problem: just rerun `.venv/bin/python ex1/build_report.py` after any notebook
   re-execute. Committed locally, NOT pushed.
 - **Task 9** — write `ex1/chatlog.md` (reconstruct this session's prompts/responses).
-- **Task 10** — final clean run, regenerate report, push.
+  STILL PENDING (user chose to push before doing this).
+- **Task 10** — DONE (this round): clean end-to-end notebook run (all asserts pass),
+  report regenerated via `build_report.py`, everything committed and **pushed** to
+  GitHub main. (A second push will be needed once Task 9 / chatlog is added.)
 
 ## Environment notes (important if resuming on a different machine / Claude web)
 
