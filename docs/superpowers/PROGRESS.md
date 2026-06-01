@@ -46,8 +46,8 @@ wait for approval → next part.
 - **Task 8** — DROPPED (user decision). The HTML report (`ex1/report.html`) and its
   builder (`ex1/build_report.py`) were removed, and GitHub Pages was disabled. The
   rendered notebook on GitHub is the deliverable. These files were also purged from git
-  history. (The old email the previous email address was likewise scrubbed from the chat log and from
-  history; all commit authors were already on `eladm1993@gmail.com`.)
+  history. (The previous email address was likewise scrubbed from the chat log and from
+  history; all commit authors are on `eladm1993@gmail.com`.)
 - **Task 9** — DONE. `ex1/chatlog.md` written (reconstructs Phase A setup + this
   Phase B resume session as a Q/A log). Committed and pushed.
 - **Task 10** — DONE: clean end-to-end notebook run (all asserts pass), report
