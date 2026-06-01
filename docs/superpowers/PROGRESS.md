@@ -21,14 +21,19 @@ wait for approval → next part.
 - **Task 3** — `ex1/solution.ipynb` skeleton (title + 4 part headers).
 - **Task 4 / Part 2 (Linear System)** — DONE + approved by user. Includes:
   solve cell (det=4, x=(1,2,3), verified), geometric figure (three planes meeting
-  at the solution), and a Gaussian-elimination step-by-step figure.
+  at the solution), and a Gaussian-elimination step-by-step figure. Later EXTENDED
+  (user request) with a third route: explicit inverse via cofactors/adjugate
+  (`A^-1 = adj(A)/det`, verified vs np.linalg.inv and A@A^-1=I) + a note comparing
+  the three solution routes' cost/stability.
+- **Task 6 / Part 3 (Linearity)** — DONE (built ahead of Part 4 at user request).
+  Markdown proof of additivity & homogeneity (entry-by-entry), numeric demo on
+  random data, and parallelogram figure `fig_part3_linearity.png` showing
+  A(u+v)=Au+Av. Runs green. NOTE: committed locally, NOT yet pushed.
 
 ## Remaining ⏳ (in this order)
 
 - **Task 5 / Part 4 (Derivative matrix)** — build D, compute the 5 items, assert.
   Add a figure: a polynomial vs its derivative (e.g. q(x)=1+x+x²+x³+x⁴ and q'(x)).
-- **Task 6 / Part 3 (Linearity)** — state + prove additivity & homogeneity, numeric
-  demo. Figure: show L(u+v)=Lu+Lv as vector arrows (parallelogram).
 - **Task 7 / Part 1 (Word embeddings)** — model already cached locally; load
   glove-wiki-gigaword-100 (dim 100), 5 words, pairwise cosine-distance matrix +
   heatmap, closest/furthest. Figure: 2D (PCA) scatter of the 5 word vectors.
