@@ -43,11 +43,19 @@ wait for approval → next part.
   locally, NOT yet pushed. (PCA done with numpy SVD — no sklearn dependency added.)
 - **All four parts (1-4) now complete and the full notebook runs top-to-bottom.**
 
-- **Task 8** — DROPPED (user decision). The HTML report (`ex1/report.html`) and its
-  builder (`ex1/build_report.py`) were removed, and GitHub Pages was disabled. The
-  rendered notebook on GitHub is the deliverable. These files were also purged from git
-  history. (The previous email address was likewise scrubbed from the chat log and from
-  history; all commit authors are on `eladm1993@gmail.com`.)
+- **Task 8** — DROPPED then replaced. The HTML report (`ex1/report.html`) and its builder
+  (`ex1/build_report.py`) were removed, GitHub Pages disabled, and both purged from git
+  history. (The previous email address was likewise scrubbed from chat log + history; all
+  commit authors are on `eladm1993@gmail.com`.) INSTEAD, a static **`ex1/solution.pdf`**
+  is committed as the immutable submission asset: full executed notebook → standalone HTML
+  (`nbconvert --embed-images`) → headless Chrome `--print-to-pdf` (waits for MathJax).
+  15 pages; verified to contain all 4 parts, the computed results, and properly rendered
+  math (no raw-LaTeX leakage). Regenerate: export HTML then Chrome `--headless=new
+  --print-to-pdf`.
+- **NOTE on grader feedback:** A Gemini review claimed Parts 3 & 4 were "missing" — this
+  was FALSE (verified: both fully present with proofs, computations, asserts, outputs in
+  both local and origin/main). Likely cause: GitHub failing to render the large notebook.
+  The PDF exists to bypass that. Do NOT "re-add" Parts 3/4 — they are complete.
 - **Task 9** — DONE. `ex1/chatlog.md` written (reconstructs Phase A setup + this
   Phase B resume session as a Q/A log). Committed and pushed.
 - **Task 10** — DONE: clean end-to-end notebook run (all asserts pass), report
