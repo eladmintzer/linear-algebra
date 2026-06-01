@@ -6,7 +6,7 @@ Solutions for the linear algebra exercises (AI prep course for entrepreneurs).
 
 - **[Exercise 1](ex1/)** — Word embeddings, solving a linear system, linearity of
   matrix multiplication, and the polynomial derivative matrix.
-  - [Notebook](ex1/solution.ipynb) · [Report](ex1/report.html)
+  - [Notebook](ex1/solution.ipynb)
 
 ## Setup
 

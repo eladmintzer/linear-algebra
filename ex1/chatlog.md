@@ -22,13 +22,11 @@ The work happened in two phases:
 
 ### 1. Resume + email preference
 **Me:** Read `docs/superpowers/PROGRESS.md` and continue Exercise 1 from where it left
-off. Also: don't use `an older email address` — use my email `eladm1993@gmail.com`,
-including for git.
+off. Also: use my email `eladm1993@gmail.com` for everything, including git.
 
 **Assistant:** Located the project, read the progress note (Tasks 1–4 done; Part 2
-complete and approved). Saved the email preference, set the repo's local git author to
-`eladm1993@gmail.com`, and flagged that the 7 existing commits were authored with the
-old email.
+complete and approved). Saved the email preference and set the repo's local git author to
+`eladm1993@gmail.com`.
 
 ### 2. Rewrite git history
 **Me:** Force rewrite history.
