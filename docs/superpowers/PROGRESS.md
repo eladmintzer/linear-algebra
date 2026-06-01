@@ -35,11 +35,16 @@ wait for approval → next part.
   general n(n-1)/2 for n=2,3,5,8). Figure `fig_part4_derivative.png`: q vs q'=Dp
   with q'(1)=pᵀDp=10 marked. Runs green. NOTE: committed locally, NOT yet pushed.
 
+- **Task 7 / Part 1 (Word embeddings)** — DONE. Loaded glove-wiki-gigaword-100
+  (dim 100, asserted), 5 words [king,queen,dog,cat,coffee], cosine-distance matrix
+  + heatmap (`fig_part1_heatmap.png`), closest=dog-cat (0.120), furthest=
+  queen-coffee (0.834), king-queen=0.249. PCA-via-SVD 2D scatter
+  (`fig_part1_pca.png`, top-2 PCs = 84.5% variance). Runs green. NOTE: committed
+  locally, NOT yet pushed. (PCA done with numpy SVD — no sklearn dependency added.)
+- **All four parts (1-4) now complete and the full notebook runs top-to-bottom.**
+
 ## Remaining ⏳ (in this order)
 
-- **Task 7 / Part 1 (Word embeddings)** — model already cached locally; load
-  glove-wiki-gigaword-100 (dim 100), 5 words, pairwise cosine-distance matrix +
-  heatmap, closest/furthest. Figure: 2D (PCA) scatter of the 5 word vectors.
 - **Task 8** — generate styled `ex1/report.html` (nbconvert → HTML), add header
   links (local notebook + GitHub blob URL
   `https://github.com/eladmintzer/linear-algebra/blob/main/ex1/solution.ipynb`)
