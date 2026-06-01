@@ -4,3 +4,5 @@ __pycache__/
 *.pyc
 # gensim downloaded models live in ~/gensim-data by default; ignore any local copy
 gensim-data/
+*.swp
+*.swo
