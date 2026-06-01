@@ -49,11 +49,12 @@ wait for approval → next part.
   test, no grade instruction; ends with grep-style asserts). This solves the Task-10
   overwrite problem: just rerun `.venv/bin/python ex1/build_report.py` after any notebook
   re-execute. Committed locally, NOT pushed.
-- **Task 9** — write `ex1/chatlog.md` (reconstruct this session's prompts/responses).
-  STILL PENDING (user chose to push before doing this).
-- **Task 10** — DONE (this round): clean end-to-end notebook run (all asserts pass),
-  report regenerated via `build_report.py`, everything committed and **pushed** to
-  GitHub main. (A second push will be needed once Task 9 / chatlog is added.)
+- **Task 9** — DONE. `ex1/chatlog.md` written (reconstructs Phase A setup + this
+  Phase B resume session as a Q/A log). Committed and pushed.
+- **Task 10** — DONE: clean end-to-end notebook run (all asserts pass), report
+  regenerated via `build_report.py`, everything committed and **pushed** to GitHub main.
+
+## 🎉 ALL TASKS COMPLETE — Exercise 1 finished and pushed.
 
 ## Environment notes (important if resuming on a different machine / Claude web)
 
