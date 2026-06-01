@@ -6,3 +6,6 @@ __pycache__/
 gensim-data/
 *.swp
 *.swo
+
+# generated figures (embedded inline in notebook/report)
+ex1/*.png
