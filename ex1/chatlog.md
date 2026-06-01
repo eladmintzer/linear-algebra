@@ -13,8 +13,9 @@ The work happened in two phases:
   then doing Tasks 1–4: repo + GitHub setup, Python venv, the notebook skeleton, and
   Part 2 (the linear system). A handoff note was saved to
   `docs/superpowers/PROGRESS.md`.
-- **Phase B (this session):** resuming from `PROGRESS.md` and finishing Parts 1, 3, 4,
-  the HTML report, and the final push. That session is logged below.
+- **Phase B (this session):** resuming from `PROGRESS.md`, finishing Parts 1, 3, 4,
+  cleaning up the repo (dropping an HTML report, scrubbing history), responding to an
+  (incorrect) grader review, and producing a static PDF for submission. Logged below.
 
 ---
 
@@ -104,3 +105,54 @@ by `eladm1993@gmail.com`.
 **Me:** Add Task 9 (the chat log) and push everything.
 
 **Assistant:** Wrote this file and pushed.
+
+### 12. Previewing the HTML from GitHub
+**Me:** How do I preview the HTML from GitHub?
+
+**Assistant:** Explained GitHub doesn't render `.html` files; the easiest preview is the
+notebook itself (GitHub renders `.ipynb` natively), plus options like downloading the
+file, raw.githack (public repos only), or GitHub Pages. The repo was then made public and
+Pages was enabled, serving the report — but see the next steps, where this was reversed.
+
+### 13. Drop the HTML, scrub the old email, rewrite history
+**Me:** Never mind — drop the HTML. Also rewrite the chat log so the old email doesn't
+appear there, and update history.
+
+**Assistant:** Removed `ex1/report.html` and `ex1/build_report.py`, disabled GitHub Pages,
+and edited `chatlog.md` to drop the old-email mention. Then ran `git filter-branch` to
+purge those files **and** the old email string from every commit in history, garbage-
+collected the backups, and force-pushed. Verified `git grep` across all of `origin/main`
+returned zero matches for the old address and the HTML files.
+
+### 14. Confirm the builder is gone
+**Me:** Also remove `build_report.py`, it's useless.
+
+**Assistant:** Confirmed it was already removed in the previous step — gone from the
+working tree and from every commit on the remote.
+
+### 15. Grader feedback claiming Parts 3 & 4 were missing
+**Me:** [Pasted feedback from Gemini claiming Parts 3 and 4 were skipped / missing.]
+Fix it.
+
+**Assistant:** Investigated before changing anything and showed the feedback was **false**:
+Parts 3 and 4 were fully present — in both the local copy and the published `origin/main`
+— with the linearity conditions stated and proved, the derivative matrix built, all five
+evaluations computed, and outputs present. Declined to "re-add" them (that would create
+duplicates) and explained the likely cause: GitHub failing to fully render the large
+notebook in-browser. Suggested a static export to bypass any viewer issue.
+
+### 16. Export a static PDF
+**Me:** Export a static asset — a PDF of the fully executed notebook to submit alongside
+the `.ipynb`, so the grader sees the exact layout.
+
+**Assistant:** Re-executed the notebook end-to-end, exported it to standalone HTML
+(`nbconvert --embed-images`), then printed it to PDF with headless Chrome (waiting for
+MathJax to typeset the equations). Produced `ex1/solution.pdf` (15 pages) and verified it
+contains all four parts, the computed results, and properly rendered math (no raw-LaTeX
+leakage). Committed and pushed it, and linked it from the README. (A second review chat
+log from a separate verification session, `chatlog_review.md`, was also included.)
+
+### 17. Update this log
+**Me:** Update the log to the current state.
+
+**Assistant:** Updated this `chatlog.md` to cover steps 12–17 and committed it.
