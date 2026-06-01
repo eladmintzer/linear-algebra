@@ -30,10 +30,13 @@ wait for approval → next part.
   random data, and parallelogram figure `fig_part3_linearity.png` showing
   A(u+v)=Au+Av. Runs green. NOTE: committed locally, NOT yet pushed.
 
+- **Task 5 / Part 4 (Derivative matrix)** — DONE. Built D (superdiagonal 1,2,3,4),
+  all 5 items computed + asserted (Dp=[1,2,3,4,0]; pᵀD=[0,1,2,3,4]; D²; pᵀDp=10;
+  general n(n-1)/2 for n=2,3,5,8). Figure `fig_part4_derivative.png`: q vs q'=Dp
+  with q'(1)=pᵀDp=10 marked. Runs green. NOTE: committed locally, NOT yet pushed.
+
 ## Remaining ⏳ (in this order)
 
-- **Task 5 / Part 4 (Derivative matrix)** — build D, compute the 5 items, assert.
-  Add a figure: a polynomial vs its derivative (e.g. q(x)=1+x+x²+x³+x⁴ and q'(x)).
 - **Task 7 / Part 1 (Word embeddings)** — model already cached locally; load
   glove-wiki-gigaword-100 (dim 100), 5 words, pairwise cosine-distance matrix +
   heatmap, closest/furthest. Figure: 2D (PCA) scatter of the 5 word vectors.
